@@ -1,0 +1,11 @@
+aiohttp
+beautifulsoup4
+asyncpg
+SQLAlchemy>=1.4
+alembic
+psycopg2-binary
+APScheduler
+python-dotenv
+pytest
+uvicorn
+fastapi
