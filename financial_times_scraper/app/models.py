@@ -9,8 +9,8 @@ class Article(Base):
     title = Column(String, nullable=False)
     content = Column(Text, nullable=False)
     author = Column(String, nullable=True)
-    published_at = Column(DateTime, nullable=False)
-    scraped_at = Column(DateTime, server_default=func.now(), nullable=False)
+    published_at = Column(DateTime(timezone=True), nullable=True)
+    scraped_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
     subtitle = Column(String, nullable=True)
     tags = Column(ARRAY(String), nullable=True)
