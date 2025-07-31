@@ -4,12 +4,10 @@ import aiohttp
 
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta, timezone
-import json
 from playwright.async_api import async_playwright
 
 from financial_times_scraper.app.database import AsyncSessionLocal
 from financial_times_scraper.app.models import Article
-import asyncio
 from sqlalchemy.future import select
 
 BASE_URL = "https://www.ft.com/world"
