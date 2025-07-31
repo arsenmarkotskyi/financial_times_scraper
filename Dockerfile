@@ -6,4 +6,6 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "app/scraper/ft_scraper.py"]
+ENV PYTHONPATH=/app
+
+CMD ["python", "financial_times_scraper/app/scraper/ft_scraper.py"]
